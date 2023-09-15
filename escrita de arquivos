@@ -1,0 +1,14 @@
+programa
+{
+	inclua biblioteca Arquivos
+ --> arq
+	funcao inicio()
+	{
+		cadeia linha= ""
+		inteiro arq = arq.abrir_arquivo("./clientes.txt", arq.MODO_LEITURA)
+		enquanto(nao arq.fim_arquivo(arq)){
+			   linha = arq.ler_linha(arq)
+			    escreva(linha, "\n")
+		}
+	}
+}
