@@ -1,0 +1,32 @@
+programa
+{
+	inclua biblioteca Tipos
+	
+	
+	funcao inicio()
+	{
+		//latas de 18 litros
+		//1 litro de tinta pinta 3 metros
+		// cada lata pinta 54 metros
+
+		inteiro cobertura_tinta = 3
+		inteiro capacidade_lata = 18
+
+		real area            = 0.0
+		real litros_tinta    = 0.0 //?
+		real numero_latas = 0 //?
+		
+		area = 55.0
+
+		litros_tinta = area / 3
+
+		numero_latas = litros_tinta / capacidade_lata
+
+		se(numero_latas > Tipos.real_para_inteiro(numero_latas)) {
+			numero_latas = Tipos.real_para_inteiro(numero_latas) + 1
+		}
+
+		escreva(numero_latas)
+		
+	}
+}
